@@ -8,3 +8,7 @@ Drum Kit website, made while learning javascript DOM. Audio plays when you eithe
   - playing audio
   - adding and removing classes
   - setTimeout to delay functions
+- SASS
+  - variables
+  - separate files
+  - google fonts
