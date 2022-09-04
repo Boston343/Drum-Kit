@@ -5,6 +5,7 @@ document.querySelectorAll(".drum").forEach(item => {
     item.addEventListener("click", function () {
         var key = this.innerHTML;
         playSound(key);
+        buttonAnimation(key);
     })
 })
 
@@ -12,10 +13,11 @@ document.querySelectorAll(".drum").forEach(item => {
 // add event listener for keypress
 document.addEventListener("keydown", function(event) {
     playSound(event.key);
+    buttonAnimation(event.key);
 });
 
 // ----------------------------------------------------------------------------------------------------------
-// Title
+// playSound function. Takes in a "key" which is a lowercase character, and plays corresponding sound
 function playSound(key) {
     switch (key) {
         case "w":
@@ -56,4 +58,14 @@ function playSound(key) {
         default:
             break;
     }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// button animation
+function buttonAnimation(key) {
+    var activeButton = document.querySelector("." + key);
+    activeButton.classList.add("pressed");
+    setTimeout(function() {
+        activeButton.classList.remove("pressed");
+    }, 50);
 }
