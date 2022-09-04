@@ -1,6 +1,8 @@
 # Drum-Kit
 Drum Kit website, made while learning javascript DOM. Audio plays when you either click one of the buttons, or press one of the keys corresponding to the different drums on the page.
 
+Website can be viewed here: https://boston343.github.io/Drum-Kit/ 
+
 ## Includes
 - Javascript DOM (Document Object Model) manipulation
   - querySelectorAll
